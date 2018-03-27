@@ -1,23 +1,32 @@
 ---
 title: "Beginning with LANDIS-II to study Vermont forests"
-author: "Elias M Guerra"
-date: "December 2017"
+name: Elias M. Guerra
+date: "Fall 2017"
 output: github_document
 ---
 
-*This is a revised version of my independent biology project from Fall 2017.*
+
+*This is a revised version of my senior independent biology project using the landscape simulation model LANDIS-II*
 
 #### Introduction 
 
 Climate and land use change are having tremendous impact on the natural environment and in turn on humans. In the Northeast, prior to European settlement, the forests were largely untouched. Beginning around 1650, two centuries of logging and agricultural clearing removed or cut almost all forest. In the mid-nineteenth century, agricultural expansion into the midwest and eastern industrialization led to population concentration in urban areas and widespread farm abandonment. This caused two centuries of natural reforestation which has continued until recently. A comparison of pre-colonial and modern forests based on archival, colonial land-survey notes and modern data from the Forest Inventory Analysis database found that while most major tree species remain 1) the relationship between forests composition and the environment has weakened and 2) pre-colonial forests were compositionally more homogenous at short distances and more heterogenous at longer distances. 
 
-```{r message=FALSE, warning=FALSE, paged.print=FALSE, echo = F}
+First, among environmental variables, temperature had the strongest association with forest composition. In the modern forests temperature is still the most important environmental variable but the relationship is much weaker. After temperature, elevation and sand were historically and are still the most important environmental variables. Secondly, pre-colonial forests in the south were dominated by oak and hickory and dissimilar to the spruce-fir forests farther north. In the modern forests, maple is a significant component regardless of location. In general, the modern forest does not represent the original mosaic of forest-types influenced with strong climate-driven compositional gradients. Agricultural land cover continues to decline but the land transition to development now overrides reforestation (Thompson et al. 2013).
+
+```{r echo=FALSE, fig.height=8, fig.width=8, message=FALSE, warning=FALSE, paged.print=FALSE}
 library(imager)
-figure3 <- load.image("journal.pone.0072540.g003.png")
-plot(figure3, axes = F)
+thompson <- load.image("journal.pone.0072540.g003.png")
+plot(thompson, axes = F)
 ```
 
-##### Pre-colonial and modern forest of the Northeast U.S. *Thompson et al. (2013).*
+##### Figure 1. Pre-colonial and modern forest of the Northeast U.S. *Thompson et al. (2013).*
+
+First, among environmental variables, temperature had the strongest association with forest composition. In the modern forests temperature is still the most important environmental variable but the relationship is much weaker. After temperature, elevation and sand were historically and are still the most important environmental variables. Secondly, pre-colonial forests in the south were dominated by oak and hickory and dissimilar to the spruce-fir forests farther north. In the modern forests, maple is a significant component regardless of location. In general, the modern forest does not represent the original mosaic of forest-types influenced with strong climate-driven compositional gradients. Agricultural land cover continues to decline but the land transition to development now overrides reforestation (Thompson et al. 2013).
+
+Global circulation models agree that the Northeastern US climate will become warmer. Patterns of precipitation are less clear. Possible effects may be increased growth due to a longer growing season, decreased growth in summer months due to greater respiration and evapotranspiration, and shits in tree species ranges. Different species are expected to react differently depending on the life history traits (eg. shade tolerance, thermal tolerance. Duveneck et al. 2016). Harvesting wil be an additional pressure because of growing demand for renewable energy resources like forest-derived biomass for biofuels (Benjamin et al 2009).
+
+In order to understand how climate change and land development will impact the Northeast in future, simulation models are very useful. Computer models of forest change first developed in the late 1960s and early 1970s as researchers in landscape ecology were confronted with the limitations of empirical studies. Experiments over large spatial and temporal scales are often not feasible, hence simulation models. Since the first models such as JABOWA and FOREST appeared, increasing complexity in ecological sciences and landscape models has necessitated advanced models that are not simple caricatures of well-functioning landscapes. Spatially-dynamic models, such as LANDIS-II, are very useful for studying large landscapes while robustly simulating disturbance and succession (Mladenoff et al. 2004, Scheller et al. 2007).
 
 
 
