@@ -55,3 +55,6 @@ kable(data.frame(mm))
 ##### Table 1. Species life history attributes and units for LANDIS-II.
 
 The landscape is represented by a grid of interacting cells at a user- defined spatial resolution, where each cell represents a different community.
+
+Not done uploading this document...
+![gif](https://media.giphy.com/media/y1ZBcOGOOtlpC/giphy.gif)
