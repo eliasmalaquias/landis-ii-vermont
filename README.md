@@ -51,9 +51,6 @@ The two studies discussed mades use of LANDIS-II, a physiologically-based, spati
 
 The landscape is represented by a grid of interacting cells at a user- defined spatial resolution, where each cell represents a different community.
 
-Not done uploading this document...
-<p align="center">
-  <![gif](https://media.giphy.com/media/y1ZBcOGOOtlpC/giphy.gif)>
-</p>
+Not finished with this document yet...
 
-  
+![gif](https://media.giphy.com/media/y1ZBcOGOOtlpC/giphy.gif)
